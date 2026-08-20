@@ -1,5 +1,9 @@
 *{margin: 0; padding: 0;}
 
+body{
+font-family: "Arial";
+}
+
 header{
 height: 70px;
  width: 100%; 
@@ -92,4 +96,19 @@ font-size: 22px;
 text-align: center;
 line-height: 20px;
 margin: 10px 0;
+}
+
+main .catalogo ul li .categoria{
+color: #999;
+padding: 0 0 10px 10px;
+}
+
+main .catalogo ul li .lancamento{
+color: #999;
+padding: 0 0 10px 10px;
+}
+
+main .catalogo ul li .avaliacao{
+color: #999;
+padding: 0 0 10px 10px;
 }
