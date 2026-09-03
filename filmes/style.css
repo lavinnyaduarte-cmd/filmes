@@ -114,6 +114,29 @@ margin: 0 auto;
 footer{
 background: #000;
 height: 350px;
-width: 100%
+width: 100%;
+display:flex;
+padding: 15px;
+}
+footer div{
+
+    height: 350px;
+    width: 33%;
+    border: 1px solid #fff;
+   
+    
 }
 
+footer .sobre{
+ color: #fff;
+}
+
+footer h2{
+
+font-size: 28px;
+}
+
+footer p{
+font-size: 16px;
+line-height: 16px;
+}
