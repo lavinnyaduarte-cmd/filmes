@@ -159,4 +159,20 @@ text-decoration: none;
 footer .menu ul li a:hover{
 color: red;
 }
+footer .categoria ul{
+display: flex;
+flex-direction: column;
+}
+
+footer .categoria ul li{
+list-style: none;
+margin: 5px 0 5px 20px;
+}
+
+footer .categoria ul li a{
+color: white;
+text-decoration: none;
+}
+
+
 
