@@ -29,7 +29,9 @@ header a{
 }
 
 
-
+header ul li a:hover{
+color: red;
+}
 
 
 main .slide{
@@ -157,6 +159,9 @@ text-decoration: none;
 }
 
 footer .menu ul li a:hover{
+color: red;
+}
+footer .categoria ul li a:hover{
 color: red;
 }
 footer .categoria ul{
