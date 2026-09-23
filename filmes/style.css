@@ -32,7 +32,12 @@ header a{
 header ul li a:hover{
 color: red;
 }
-
+header ul li a:active{
+color: orange;
+}
+header ul li a:visited{
+color:  blue;
+}
 
 main .slide{
 	background: url("imagens/banner-principal.png");
