@@ -213,3 +213,26 @@ footer > p{
 	color:red;
      background: black;
 }
+
+.disponivel ul li:visited{
+	color:red;
+     background: black;
+}
+
+/* menu dropdown*/
+
+.dropdown-content{
+display: none;
+}
+
+.dropdown:hover .dropdown-content{
+display: flex;
+flex-direction: column;
+positon: absolute;
+background: black;
+padding: 0 10px;
+}
+
+.dropdown-content a{
+padding: 7px 0;
+}
