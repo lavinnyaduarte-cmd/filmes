@@ -39,8 +39,7 @@ background: #fff;
 
 /*categoria*/
 
-ul{
-width: 100%;
+ ul{
 height: 60px;
 display: flex;
 justify-content:center;
@@ -48,15 +47,27 @@ align-items: center;
 background: #ddd;
 
 }
-ul li {
+ ul li {
 list-style:none;
-margin:5px;
+margin:15px;
 
 }
 
-ul li a{
+ ul li a{
 text-decoration:none;
 font-size: 19px;
 color: #333;
+padding: 30px;
+}
 
+ ul li a:hover{
+background: #ccc;
+}
+
+#categoria h2{
+text-align:center;
+}
+
+#categoria form{
+text-align: center;
 }
