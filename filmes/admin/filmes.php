@@ -1,0 +1,31 @@
+<meta charset="UTF-8"></meta>
+<link rel="stylesheet" href="style.css">
+<ul>
+<li><a href="categorias.html">categorias</a></li>
+
+<li><a href="filmes.html">filmes</a></li>
+
+</ul>
+
+<main id="filme">
+
+<form>
+<h2>Filmes</h2>
+
+    <input type="file" name="imagem">
+
+    <input type="text" name="titulo" placeholder="Titulo do filme...">
+
+    <textarea name="descricao" placeholder="Descrição do filme..."></textarea>
+
+    <input type="text" name="categoria" placeholder="categoria do filme...">
+
+    <input type="number" name="lancamento" placeholder="Ano de lançamento">
+
+    <input type="text" name="nota" placeholder="Nota do filme...">
+
+<button name="salvar">salvar</button>
+</form>
+</main>
+
+
