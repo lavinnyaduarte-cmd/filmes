@@ -34,4 +34,9 @@
 		
 
 	}
+
+	/*busca de dados  da  tabela  categoria*/
+
+	$sql  = "SELECT * FROM  Categoria";
+	$resultado  = $conn ->query($sql);
  ?>
