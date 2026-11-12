@@ -19,10 +19,11 @@
 	if(isset($_GET['salvar'])){
 		$nomeCategoria = $_GET['categoria'];
 
-		$sql = "INSERT INTO categoria (nome) values ('$nomeCategoria')";
+		$sql = "INSERT INTO categorias (nome) values ('$nomeCategoria')";
 
 		if($conn -> query($sql)){
-			echo "gravou com sucesso";
+			echo "gravou com sucesso  ";
+			
 		
 		}
 		
@@ -35,8 +36,14 @@
 
 	}
 
-	/*busca de dados  da  tabela  categoria*/
+	/*buscar dsdos da tabel categoria*/
 
-	$sql  = "SELECT * FROM  Categoria";
-	$resultado  = $conn ->query($sql);
+	$sql = "SELECT * FROM categorias";
+	$resultado = $conn ->query($sql);
+
+	while($obj = $resultado ->fetch_assoc()) {
+		echo $obj['id'] . "-";
+		echo $obj['nome'] . "<BR>";
+	}
+
  ?>
