@@ -8,21 +8,22 @@
 	<li><a href="filmes.html">Filmes</a></li>
 </ul>
 <main id="categoria">
-	<form method="get">
+	<form method="get" action="
+	<?php $editar = (isset($_GET['editar'])) ? "?editar=".$_GET['editar']; &salvar" : "";?>">
 		<h2>Categorias</h2>
 
-	<?php
-	if(isset($_GET['editar']) and $_GET['editar'] !=NULL){
-		$id_categoria = $_GET['editar'];
-	$sql = "SELECT * FROM categoria WHERE id = $id_categoria";
+		<?php
+		if(isset($_GET['editar']) and $_GET['editar'] != NULL){
+			$id_categoria = $_GET['editar'];
+			$sql = "SELECT * FROM categoria WHERE id = $id_categoria";
 
-	$resultado = $conn->query($sql);
-	$obj = $resultado->fetch_assoc();
-	}
+			$resultado = $conn->query($sql);
+			$obj = $resultado->fetch_assoc();
+		}
+		?>
 
-	?>
 
-		<input type="text" name="categoria" placeholder="Nome Categoria..." value="<?php echo $obj['nome']; ?>">
+	<input type="text" name="categoria" placeholder="Nome Categoria..." value="<?php echo $obj['nome'] ?>">
 		<button name="salvar">Salvar</button>
 	</form>
 </main>
@@ -48,8 +49,10 @@
 	}
 	
 	/*Editar uma categoria*/
-	if(isset($_GET['editar'])){
-		echo "entrou, lá ele";
+	if(isset($_GET['editar']) && isset($_GET['salvar'])){
+		echo "entrou";
+
+		
 	}
 
 
